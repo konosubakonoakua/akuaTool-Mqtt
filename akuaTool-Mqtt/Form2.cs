@@ -96,8 +96,6 @@ namespace akuaTool_Mqtt
                 isServerOnline = true;
                 Invoke((new Action(() =>
                 {
-                    this.materialFlatButton1.ForeColor = Color.Green;
-                    this.materialFlatButton1.BackColor = Color.Green;
                     this.materialFlatButton1.Text = "disconn";
                 })));
 
@@ -107,8 +105,6 @@ namespace akuaTool_Mqtt
                 isServerOnline = false;
                 Invoke((new Action(() =>
                 {
-                    this.materialFlatButton1.ForeColor = Color.Red;
-                    this.materialFlatButton1.BackColor = Color.Red;
                     this.materialFlatButton1.Text = "conn";
                 })));
             }));

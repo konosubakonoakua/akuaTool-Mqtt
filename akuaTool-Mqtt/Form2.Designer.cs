@@ -89,19 +89,23 @@
             // 
             // materialFlatButton1
             // 
-            this.materialFlatButton1.AutoSize = true;
             this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialFlatButton1.BackColor = System.Drawing.Color.Transparent;
             this.materialFlatButton1.Depth = 0;
             this.materialFlatButton1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.materialFlatButton1.FlatAppearance.BorderSize = 2;
+            this.materialFlatButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.materialFlatButton1.Location = new System.Drawing.Point(0, 246);
             this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialFlatButton1.MaximumSize = new System.Drawing.Size(600, 600);
             this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialFlatButton1.Name = "materialFlatButton1";
+            this.materialFlatButton1.Padding = new System.Windows.Forms.Padding(1);
             this.materialFlatButton1.Primary = false;
             this.materialFlatButton1.Size = new System.Drawing.Size(266, 36);
             this.materialFlatButton1.TabIndex = 4;
             this.materialFlatButton1.Text = "LinkStart";
-            this.materialFlatButton1.UseVisualStyleBackColor = true;
+            this.materialFlatButton1.UseVisualStyleBackColor = false;
             this.materialFlatButton1.Click += new System.EventHandler(this.MaterialFlatButton1_Click);
             // 
             // materialSingleLineTextField_pass
@@ -133,18 +137,18 @@
             this.Controls.Add(this.materialSingleLineTextField_port);
             this.Controls.Add(this.materialSingleLineTextField_ip);
             this.Name = "Form2";
+            this.Sizable = false;
             this.Text = "Server Setup";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_ip;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_port;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_user;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_pass;
+        public MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_ip;
+        public MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_port;
+        public MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_user;
+        public MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
+        public MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField_pass;
     }
 }
